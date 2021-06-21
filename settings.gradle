@@ -1,0 +1,3 @@
+rootProject.name = "01000WxUtilsApp"
+include ':app'
+include ':wxlibrary'
