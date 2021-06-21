@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mjsoftking.wxlibrary">
+
+    <application >
+
+        <!--微信AppKey-->
+        <meta-data
+            android:name="WX_LIBRARY_WX_APP_KEY"
+            android:value="${WX_LIBRARY_WX_APP_KEY}"/>
+        <!--微信AppSecret-->
+        <meta-data
+            android:name="WX_LIBRARY_WX_APP_SECRET"
+            android:value="${WX_LIBRARY_WX_APP_SECRET}"/>
+
+        <activity
+            android:name=".wxapi.BaseWXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias
+            android:name="${applicationId}.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:targetActivity=".wxapi.BaseWXEntryActivity" />
+
+        <activity
+            android:name=".wxapi.BaseWXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias
+            android:name="${applicationId}.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity=".wxapi.BaseWXPayEntryActivity" />
+
+    </application>
+
+</manifest>

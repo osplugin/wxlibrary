@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:onClick="@{click::onClick}"
+            android:text="登录"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:onClick="@{click::onClick}"
+            android:text="分享"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/pay"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:onClick="@{click::onClick}"
+            android:text="支付"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+</layout>
