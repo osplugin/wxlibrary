@@ -1,4 +1,5 @@
 # wxlibrary aar文件使用说明
+[![](https://jitpack.io/v/com.gitee.mjsoftking/wxlibrary.svg)](https://jitpack.io/#com.gitee.mjsoftking/wxlibrary)
 ### 一、项目介绍
 1. APP 使用示例项目，libs下含有以编译最新的aar资源。
 2. wxlibrary arr资源项目，需要引入的资源包项目。
@@ -6,7 +7,30 @@
 4. aar文件位置，打开项目所在文件夹，找到 wxlibrary\build\outputs\aar 下。
 
 ### 二、工程引入工具包
-下载项目，可以在APP项目的libs文件下找到*.aar文件（已编译为最新版），选择其中一个引入自己的工程
+**工程的build.gradle文件添加** 
+
+```
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+
+        //jitpack 仓库
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+**APP的build.gradle文件添加** 
+```
+dependencies {
+    ...
+    implementation 'com.gitee.mjsoftking:wxlibrary:1.0.1'
+    //引入wxlibrary.aar的依赖资源，以下2个
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    implementation 'org.greenrobot:eventbus:3.2.0'
+}
+```
 
 引入微信工具包及微信SDK
 ```
