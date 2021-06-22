@@ -3,8 +3,7 @@
 ### 一、项目介绍
 1. APP 使用示例项目，libs下含有以编译最新的aar资源。
 2. wxlibrary arr资源项目，需要引入的资源包项目。
-3. aar文件生成，在工具栏直接Gradle - (项目名) - wxlibrary - Tasks - build - assemble，直到编译完成
-4. aar文件位置，打开项目所在文件夹，找到 wxlibrary\build\outputs\aar 下。
+3. jitpack 仓库在线引入即可
 
 ### 二、工程引入工具包
 **工程的build.gradle文件添加** 
@@ -32,18 +31,6 @@ dependencies {
 }
 ```
 
-引入微信工具包及微信SDK
-```
-dependencies {
-   //引入wxlibrary.aar资源
-   implementation files('libs/wxlibrary-release.aar')
-   //引入wxlibrary.aar的依赖资源，以下2个
-   implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.6.5'
-   //eventbus，引入后你的项目将支持EventBus，EventBus是一种用于Android的事件发布-订阅总线，替代广播的传值方式，使用方法可以度娘查询。
-   implementation 'org.greenrobot:eventbus:3.1.1'
-   ...
-}
-```
 ### 三、工具包初始准备工作
 * 工程继承WxApplication 或者 application 的 onCreate 下使用，获取 **APPkey** 和**AppSecret**需要使用mete-data方式获取。
     **isCheckSignature()** 与 **isNowRegister()** 默认即可
