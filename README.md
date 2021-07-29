@@ -1,5 +1,7 @@
 # wxlibrary aar文件使用说明
-[![](https://jitpack.io/v/com.gitee.mjsoftking/wxlibrary.svg)](https://jitpack.io/#com.gitee.mjsoftking/wxlibrary)
+[![License](https://img.shields.io/badge/License%20-Apache%202-337ab7.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=16)
+[![](https://jitpack.io/v/com.gitee.osard/wxlibrary.svg)](https://jitpack.io/#com.gitee.osard/wxlibrary)
 ### 一、项目介绍
 1. APP 使用示例项目，libs下含有以编译最新的aar资源。
 2. wxlibrary arr资源项目，需要引入的资源包项目。
@@ -182,5 +184,21 @@ android {
 }
 ```
 
+License
+-------
+
+    Copyright 2021 mjsoftking
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
 
 
