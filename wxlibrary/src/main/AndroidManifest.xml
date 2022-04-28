@@ -2,44 +2,56 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mjsoftking.wxlibrary">
 
-    <application >
+    <!--在应用的AndroidManifest.xml添加如下<queries>标签-->
+    <queries>
+        <!--指定微信包名-->
+        <package android:name="com.tencent.mm" />
+    </queries>
+
+    <application>
 
         <!--微信AppKey-->
         <meta-data
             android:name="WX_LIBRARY_WX_APP_KEY"
-            android:value="${WX_LIBRARY_WX_APP_KEY}"/>
+            android:value="${WX_LIBRARY_WX_APP_KEY}" />
         <!--微信AppSecret-->
         <meta-data
             android:name="WX_LIBRARY_WX_APP_SECRET"
-            android:value="${WX_LIBRARY_WX_APP_SECRET}"/>
+            android:value="${WX_LIBRARY_WX_APP_SECRET}" />
 
         <activity
             android:name=".wxapi.BaseWXEntryActivity"
             android:exported="true"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.Translucent">
+            android:taskAffinity="${applicationId}"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
             <intent-filter>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity-alias
             android:name="${applicationId}.wxapi.WXEntryActivity"
             android:exported="true"
-            android:targetActivity=".wxapi.BaseWXEntryActivity" />
+            android:targetActivity=".wxapi.BaseWXEntryActivity"
+            android:taskAffinity="${applicationId}"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <activity
             android:name=".wxapi.BaseWXPayEntryActivity"
             android:exported="true"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.Translucent">
+            android:taskAffinity="${applicationId}"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
             <intent-filter>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity-alias
             android:name="${applicationId}.wxapi.WXPayEntryActivity"
             android:exported="true"
-            android:targetActivity=".wxapi.BaseWXPayEntryActivity" />
+            android:targetActivity=".wxapi.BaseWXPayEntryActivity"
+            android:taskAffinity="${applicationId}"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
     </application>
 
