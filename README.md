@@ -26,7 +26,7 @@ allprojects {
 ```
 dependencies {
     ...
-    implementation 'com.gitee.osard:wxlibrary:1.1.0'
+    implementation 'com.gitee.osard:wxlibrary:1.1.1'
     //引入wxlibrary.aar的依赖资源，以下2个
     implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
     implementation 'org.greenrobot:eventbus:3.2.0'
