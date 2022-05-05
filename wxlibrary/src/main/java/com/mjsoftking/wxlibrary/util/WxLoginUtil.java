@@ -135,6 +135,10 @@ public class WxLoginUtil {
         return false;
     }
 
+    /**
+     * 不要主动调用此方法
+     */
+    @Deprecated
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void event(WXLibraryBaseEvent event) {
         destroy();
