@@ -37,7 +37,7 @@ dependencies {
 * 工程继承WxApplication 或者 application 的 onCreate 下使用，获取 **APPkey** 和**AppSecret**需要使用mete-data方式获取。
     **isCheckSignature()** 与 **isNowRegister()** 默认即可
 ```
-    WxApiUtil.getInstance().init(getApplicationContext(), true, true);
+    WxApiGlobal.getInstance().init(getApplicationContext(), true, true);
 ```
 * **APPkey**和**AppSecret**，需要使用mete-data方式进行赋值 
 
