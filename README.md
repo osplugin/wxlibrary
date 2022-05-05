@@ -5,7 +5,8 @@
 ### 一、项目介绍
 1. APP 使用示例项目，libs下含有以编译最新的aar资源。
 2. wxlibrary arr资源项目，需要引入的资源包项目。
-3. jitpack 仓库在线引入即可
+3. jitpack 仓库在线引入即可。
+4.  **此项目已适配微信targetSdkVersion 30 SDK新版本，引入此项目后，书写习惯与旧版一致。** 
 
 ### 二、工程引入工具包
 **工程的build.gradle文件添加** 
