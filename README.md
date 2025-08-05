@@ -1,7 +1,7 @@
 # wxlibrary aar文件使用说明
 [![License](https://img.shields.io/badge/License%20-Apache%202-337ab7.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=16)
-[![](https://jitpack.io/v/com.gitee.osard/wxlibrary.svg)](https://jitpack.io/#com.gitee.osard/wxlibrary)
+[![](https://jitpack.io/v/com.github.osplugin/wxlibrary.svg)](https://jitpack.io/#com.github.osplugin/wxlibrary)
 ### 一、项目介绍
 1. APP 使用示例项目，libs下含有以编译最新的aar资源。
 2. wxlibrary arr资源项目，需要引入的资源包项目。
@@ -27,7 +27,7 @@ allprojects {
 ```
 dependencies {
     ...
-    implementation 'com.gitee.osard:wxlibrary:1.1.1'
+    implementation 'com.github.osplugin:wxlibrary:1.1.1'
     //引入wxlibrary.aar的依赖资源，以下2个
     implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
     implementation 'org.greenrobot:eventbus:3.2.0'
