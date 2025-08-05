@@ -23,7 +23,8 @@
         <!--            tools:replace="android:value"/>-->
         <!--todo 微信appKey和appSecret赋值的方法结束-->
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

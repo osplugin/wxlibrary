@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .setFail((errorCode, errStr) -> {
                     //todo 其他类型错误， errorCode为微信返回的错误码
                 })
-                //发起分享请求
+                //发起支付请求
                 .payWeChat("json文本");
     }
 }
